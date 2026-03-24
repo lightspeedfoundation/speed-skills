@@ -1,7 +1,7 @@
 ---
 name: agentic-commands
 description: >-
-  Full command map for Speed-CLI (excluding agent/SAI, terminal, launch): global flags,
+  Full command map for Speed-CLI: global flags,
   JSON error contract, grouped subcommands with roles and key flags, doctor checks.
   Triggers: which speed subcommand to run, automation reference.
 ---
@@ -13,8 +13,6 @@ description: >-
 This skill summarizes subcommands that appear in **`speed --help`** for **`@lightspeed-cli/speed-cli`**. Prefer **`speed <cmd> --help`** for exhaustive flags.
 
 **Out of scope here (see CLI / product docs elsewhere):** **`speed terminal`** (Chrome extension pairing).
-
-**Names you may see in older docs but often missing from current npm builds:** **`speed agent`**, **`speed memory`**, **`speed launch`**, **`speed scripts`** — if the CLI prints `unknown command`, that build does not ship them; rely on **`speed --help`** and the tables below.
 
 ## Global program options
 
@@ -120,7 +118,7 @@ Requires correct **`OPENSEA_API_KEY`** for API-heavy flows.
 
 ---
 
-## Agent tooling (non-SAI)
+## Agent tooling
 
 | Command | Role |
 |---------|------|

@@ -139,8 +139,6 @@ Each folder under `scripts/<name>/` has a **`*-skill.md`** — source of truth f
 | **`speed`** | Atomic CLI: `quote`, `swap`, `balance`, … |
 | **speed-scripts folder** | Composed loops, polling, exits, strategy parameters. |
 
-**Note:** Some metadata may reference SAI **`script.*`** families — that linkage is optional; scripts remain usable by humans and shell agents without SAI.
-
 ## Upstream documentation (read order)
 
 | Doc | URL | Contents |

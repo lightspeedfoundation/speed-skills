@@ -49,7 +49,6 @@ Chain is **` -c <id|name>`** (e.g. `base`, `8453`, `arbitrum`). Defaults favor *
 | A custodial service | The tool signs with your local wallet from setup — non-custodial. |
 | A trading venue | Execution goes through 0x / Squid / chain RPCs subject to their rules. |
 | A full strategy engine | Use **speed-scripts** or your own orchestration for bots. |
-| SAI / Terminal / Launch docs | Those subsystems are separate; this agentic track focuses on core CLI + scripts. |
 
 ## Who benefits
 

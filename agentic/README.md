@@ -2,7 +2,7 @@
 
 **GitHub Pages (this repo is the site root):** [../index.html](../index.html) — **Settings → Pages → Branch: `main`, folder `/ (root)`**, then open [https://lightspeedfoundation.github.io/speed-skills/](https://lightspeedfoundation.github.io/speed-skills/) (after the first deploy).
 
-Skill-style pages for **GitHub Pages**: YAML frontmatter (when to load), then digestible sections — **mental models**, **tables**, **pitfalls**, **related links**. These docs cover the **core multichain CLI** and **speed-scripts**. They **do not** cover SAI (`speed agent`), Speed Terminal (`speed terminal`), or Launchpad (`speed launch`).
+Skill-style pages for **GitHub Pages**: YAML frontmatter (when to load), then digestible sections — **mental models**, **tables**, **pitfalls**, **related links**. These docs cover the **core multichain CLI** and **speed-scripts**. 
 
 ## How agents should use this folder
 
