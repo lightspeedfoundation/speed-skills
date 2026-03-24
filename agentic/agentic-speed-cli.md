@@ -10,9 +10,9 @@ Agentic documentation lives here as skill-style pages for **GitHub Pages** (see 
 | Why Speed-CLI | [why/skill.md](./why/skill.md) |
 | Protocol | [protocol/skill.md](./protocol/skill.md) |
 | Commands | [commands/skill.md](./commands/skill.md) |
-| Function builder | [function-builder/skill.md](./function-builder/skill.md) |
 | Scripts | [scripts/skill.md](./scripts/skill.md) |
 | Building blocks | [building-blocks/skill.md](./building-blocks/skill.md) |
+| Function builder | [function-builder/skill.md](./function-builder/skill.md) |
 | Orchestration | [orchestration/skill.md](./orchestration/skill.md) |
 | Identity & SANS | [identity-sans/skill.md](./identity-sans/skill.md) |
 | MCP | [mcp/skill.md](./mcp/skill.md) |
