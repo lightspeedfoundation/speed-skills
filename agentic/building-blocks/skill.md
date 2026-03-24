@@ -62,7 +62,7 @@ Agents should:
 
 - JSON fields like **`buyAmount`** / **`sellAmount`** are **raw integer strings** in the token’s smallest units.
 - Before passing amounts back to **`-a`**, convert using **token decimals** (18 for many tokens; **8** for cbBTC/WBTC-class; **6** for USDC/USDT-class).
-- **Never** emit scientific notation (e.g. `2.9e-5`) into CLI amount strings — use fixed decimal formatting with the correct precision (function-builder spells this out for PowerShell and bash).
+- **Never** emit scientific notation (e.g. `2.9e-5`) into CLI amount strings — use fixed decimal formatting with the correct precision ([Function builder](../function-builder/skill.md) spells this out for PowerShell and bash).
 
 ## Validation before capital
 
@@ -75,6 +75,7 @@ Agents should:
 
 ## Related
 
+- [Function builder](../function-builder/skill.md) (decimals, JSON, shell patterns)
 - [Scripts](../scripts/skill.md) (clone + upstream links)
 - [Protocol](../protocol/skill.md) (chains, tokens)
 - [Orchestration](../orchestration/skill.md) (execution discipline)

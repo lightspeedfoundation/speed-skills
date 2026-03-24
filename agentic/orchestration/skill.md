@@ -40,7 +40,7 @@ Safe chaining requires **capturing and parsing** each JSON payload:
 - **PowerShell:** avoid naming variables **`$Args`** (automatic variable); use named parameters in functions.
 - **Bash:** `2>&1` often needed; extract with `grep -m1 '^{'` or `jq` if available.
 
-See **[function-builder-skill.md](https://github.com/lightspeedfoundation/speed-scripts/blob/main/scripts/function-builder-skill.md)** for copy-paste templates.
+See **[Function builder](../function-builder/skill.md)** (mirrored **[function-builder-skill.md](https://github.com/lightspeedfoundation/speed-scripts/blob/main/scripts/function-builder-skill.md)**) for copy-paste templates.
 
 ## Multi-terminal / multi-process
 

@@ -9,7 +9,7 @@ Skill-style pages for **GitHub Pages**: YAML frontmatter (when to load), then di
 1. **Match intent** using the `description` in each file’s frontmatter (trigger terms are listed there).
 2. **Read one skill end-to-end** before mixing commands — [Orchestration](./orchestration/skill.md) ties phases together.
 3. **Deep CLI flags** — always confirm with `speed <cmd> --help`; [Commands](./commands/skill.md) summarizes roles, not every flag.
-4. **Upstream script catalog** — [Scripts](./scripts/skill.md) links to **scripts-reference** and **function-builder** (canonical for decimals and shell patterns).
+4. **Upstream script catalog** — [Scripts](./scripts/skill.md) links to **scripts-reference**; full CLI vocabulary for scripts is **[Function builder](./function-builder/skill.md)** (mirror of upstream function-builder-skill).
 
 ## Skill index
 
@@ -19,6 +19,7 @@ Skill-style pages for **GitHub Pages**: YAML frontmatter (when to load), then di
 | [Why Speed-CLI](./why/skill.md) | Problems solved, design pillars, what the CLI is *not*, relation to speed-scripts |
 | [Protocol](./protocol/skill.md) | Env matrix, chains/explorers, SPEED address, 0x/Squid/oracles, RPC, MCP merge rules, identity/SANS |
 | [Commands](./commands/skill.md) | Global flags, JSON contract, grouped subcommands, `doctor` behavior |
+| [Function builder](./function-builder/skill.md) | Every `speed` flag/subcommand, JSON, decimals, PowerShell/bash patterns, pitfalls (mirrored from [speed-scripts function-builder-skill](https://github.com/lightspeedfoundation/speed-scripts/blob/main/scripts/function-builder-skill.md)) |
 | [Scripts](./scripts/skill.md) | Clone [speed-scripts](https://github.com/lightspeedfoundation/speed-scripts/), folder discovery, `*-skill.md`, upstream doc links |
 | [Building blocks](./building-blocks/skill.md) | Base vs target, strategy families, regime thinking, hazards, decimals |
 | [Orchestration](./orchestration/skill.md) | Chaining JSON, multi-terminal, agent phases, errors, logging |

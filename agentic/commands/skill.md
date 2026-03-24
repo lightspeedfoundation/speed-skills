@@ -147,5 +147,6 @@ JSON: `{ "ok": boolean, "checks": { ... } }`.
 ## Related
 
 - [Protocol](../protocol/skill.md) (env, chains, MCP)
+- [Function builder](../function-builder/skill.md) (full CLI reference)
 - [Start](../start/skill.md) · [Scripts](../scripts/skill.md) · [Orchestration](../orchestration/skill.md)
 - [Index](../README.md)

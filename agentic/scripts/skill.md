@@ -38,7 +38,7 @@ Each folder under `scripts/<name>/` has a **`*-skill.md`** — source of truth f
 
 > **When to use:** Writing, extending, or debugging automation that calls `speed` (flags, JSON, decimals, shell quirks).  
 > **What it does:** Meta-reference for authors — full CLI vocabulary and patterns; not a trading strategy script.  
-> **Skill:** [function-builder-skill.md](https://github.com/lightspeedfoundation/speed-scripts/blob/main/scripts/function-builder-skill.md)
+> **Skill (speed-skills mirror):** [agentic/function-builder/skill.md](../function-builder/skill.md) — same content as upstream **[function-builder-skill.md](https://github.com/lightspeedfoundation/speed-scripts/blob/main/scripts/function-builder-skill.md)**.
 
 ### Bracket order (`bracket-any`)
 
@@ -146,9 +146,9 @@ Each folder under `scripts/<name>/` has a **`*-skill.md`** — source of truth f
 | **Repo** | [github.com/lightspeedfoundation/speed-scripts](https://github.com/lightspeedfoundation/speed-scripts) | Layout rules, “Available scripts” table. |
 | **scripts-reference.md** | [blob/main/scripts/scripts-reference.md](https://github.com/lightspeedfoundation/speed-scripts/blob/main/scripts/scripts-reference.md) | **Full bot catalog**: trailing stop, limit-order, bracket, ladder, hybrid, momentum, mean-revert, crash-buy, compression, grid, TWAP, market-watch, etc.; **regime map**; **interaction warnings** (double entry). |
 | **scripts/README.md** | [blob/main/scripts/README.md](https://github.com/lightspeedfoundation/speed-scripts/blob/main/scripts/README.md) | Human + agent discovery: folder names, skill files, how to run. |
-| **function-builder-skill.md** | [blob/main/scripts/function-builder-skill.md](https://github.com/lightspeedfoundation/speed-scripts/blob/main/scripts/function-builder-skill.md) | **Complete CLI vocabulary** for script authors: global flags, env, chain table, **every `speed` subcommand** with JSON examples, **decimal handling**, **PowerShell/Bash patterns**, **pitfalls** (`$Args`, scientific notation, etc.). |
+| **Function builder** | **[agentic/function-builder/skill.md](../function-builder/skill.md)** (mirror) · [upstream function-builder-skill.md](https://github.com/lightspeedfoundation/speed-scripts/blob/main/scripts/function-builder-skill.md) | **Complete CLI vocabulary** for script authors: global flags, env, chain table, **every `speed` subcommand** with JSON examples, **decimal handling**, **PowerShell/Bash patterns**, **pitfalls** (`$Args`, scientific notation, etc.). |
 
-For **strategy taxonomy** and **which bot fits which market**, start with **scripts-reference**; for **how to call `speed` correctly**, use **function-builder**.
+For **strategy taxonomy** and **which bot fits which market**, start with **scripts-reference**; for **how to call `speed` correctly**, read **[Function builder](../function-builder/skill.md)** (mirrored from upstream).
 
 ## Conventions (from upstream)
 
@@ -166,6 +166,7 @@ For **strategy taxonomy** and **which bot fits which market**, start with **scri
 
 ## Related
 
+- [Function builder](../function-builder/skill.md) (full `speed` vocabulary for script authors)
 - [Building blocks](../building-blocks/skill.md) (how strategies compose)
 - [Commands](../commands/skill.md) (underlying CLI)
 - [Orchestration](../orchestration/skill.md) (multi-bot, parsing)
