@@ -82,7 +82,7 @@ Set these before running any command. Put them in a `.env` file in the project r
 | Variable | Required | Description |
 |---|---|---|
 | `PRIVATE_KEY` | Yes | Hex private key (with or without `0x` prefix). |
-| `ZEROX_API_KEY` | Yes | 0x Swap API key (required for swap/quote/gas/volume/dca). |
+| `0X_API_KEY` | Yes | 0x Swap API key (required for swap/quote/gas/volume/dca). Same value is also accepted as `OX_API_KEY` in some loaders. |
 | `ALCHEMY_API_KEY` | No | Alchemy key — upgrades public RPCs; enables `history` and `pending`. |
 | `SQUID_INTEGRATOR_ID` | No | Required for `bridge` and `status --request-id`. |
 | `RPC_URL` | No | Custom RPC override for Base (chain 8453) only. |

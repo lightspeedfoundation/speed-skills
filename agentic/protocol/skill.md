@@ -115,6 +115,7 @@ Lightspeed **oracle contracts** per chain (see codebase `ORACLE_ADDRESSES`) expo
 ## Related
 
 - [Start](../start/skill.md) (bootstrap + MCP) · [Commands](../commands/skill.md) (invoke surface)
+- [Function builder](../function-builder/skill.md) (exhaustive flags, JSON, env)
 - [MCP](../mcp/skill.md) · [Identity & SANS](../identity-sans/skill.md) · [Security](../security/skill.md) · [Observability](../observability/skill.md)
 - [Building blocks](../building-blocks/skill.md) · [Orchestration](../orchestration/skill.md)
 - [Index](../README.md)

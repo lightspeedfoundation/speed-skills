@@ -24,6 +24,8 @@ git clone https://github.com/lightspeedfoundation/speed-scripts/
 2. Open that folder’s **`*-skill.md`** — authoritative for **flags**, **defaults**, and **step order**.
 3. Run the script with the **shell your OS uses** (PowerShell on Windows is common for `.ps1`).
 
+**CLI note:** There is no `speed scripts` subcommand in current releases — do not rely on it; bots always come from the **cloned repo** above.
+
 ## Function skills ([speed-scripts](https://github.com/lightspeedfoundation/speed-scripts/) on GitHub)
 
 Each folder under `scripts/<name>/` has a **`*-skill.md`** — source of truth for parameters and **ordered flow**. Summaries below; details always live in the linked file.

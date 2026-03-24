@@ -10,12 +10,11 @@ description: >-
 
 ## Scope
 
-This reference covers **built-in subcommands** as shipped in `speed-cli`. It **excludes**:
+This skill summarizes subcommands that appear in **`speed --help`** for **`@lightspeed-cli/speed-cli`**. Prefer **`speed <cmd> --help`** for exhaustive flags.
 
-- **`speed agent`** — SAI JSON envelope (see repo `docs/SAI*.md`).
-- **`speed terminal`** — Chrome extension linking.
-- **`speed launch`** — launchpad (may be WIP / separate docs).
-- **`speed memory`** — ABI cache for SAI workflows.
+**Out of scope here (see CLI / product docs elsewhere):** **`speed terminal`** (Chrome extension pairing).
+
+**Names you may see in older docs but often missing from current npm builds:** **`speed agent`**, **`speed memory`**, **`speed launch`**, **`speed scripts`** — if the CLI prints `unknown command`, that build does not ship them; rely on **`speed --help`** and the tables below.
 
 ## Global program options
 
@@ -127,7 +126,7 @@ Requires correct **`OPENSEA_API_KEY`** for API-heavy flows.
 |---------|------|
 | **`start`** | MCP connect + persist URL + merge API env. |
 | **`skill`** | Copy bundled Cursor/OpenClaw **`SKILL.md`** into project (`openclaw/skill.md` by default). |
-| **`scripts`** | CLI namespace for script-related helpers — confirm behavior with **`speed scripts --help`**. Bot code lives in [speed-scripts](https://github.com/lightspeedfoundation/speed-scripts/): **clone** the repo, discover folders under **`scripts/`**, read each **`*-skill.md`**. See [Scripts](../scripts/skill.md). |
+| *(not a subcommand)* | **Speed-scripts bots** are **not** invoked via `speed scripts` — current CLI builds **do not** register a `scripts` command (it will error as unknown). Get bots from **[speed-scripts](https://github.com/lightspeedfoundation/speed-scripts/)** (**clone** the repo, run scripts under **`scripts/<folder>/`**, follow each **`*-skill.md`**). See [Scripts](../scripts/skill.md). |
 
 ---
 

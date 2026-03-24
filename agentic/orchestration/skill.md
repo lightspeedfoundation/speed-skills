@@ -117,5 +117,6 @@ See **[Function builder](../function-builder/skill.md)** (mirrored **[function-b
 ## Related
 
 - [Start](../start/skill.md) · [Commands](../commands/skill.md) · [Scripts](../scripts/skill.md)
+- [Function builder](../function-builder/skill.md) (full `speed` flag reference)
 - [Building blocks](../building-blocks/skill.md)
 - [Index](../README.md)

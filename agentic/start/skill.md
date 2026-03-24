@@ -168,4 +168,5 @@ Stderr may still contain spinners or progress — **parse stdout only** for JSON
 ## Related
 
 - [Why Speed-CLI](../why/skill.md) · [Protocol](../protocol/skill.md) · [Commands](../commands/skill.md) · [Orchestration](../orchestration/skill.md)
+- [Scripts](../scripts/skill.md) (clone speed-scripts) · [Function builder](../function-builder/skill.md) (CLI reference)
 - [Index](../README.md)
