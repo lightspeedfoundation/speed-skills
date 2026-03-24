@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SPEED CLI — Header</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  /* Prevent any scrollbars inside the iframe (subpixel / border overflow) */
+  html {
+    overflow: hidden;
+    height: 100%;
+  }
+
+  body {
+    background: #0d131d;
+    margin: 0;
+    padding: 0;
+    min-height: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .header-wrap {
+    width: 100%;
+    max-width: 1080px;
+    position: relative;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  svg.header-grid {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+
+  .bg {
+    fill: #16202d;
+    opacity: 0.65;
+  }
+
+  .lit {
+    animation: colorwave 5s ease-in-out infinite;
+  }
+
+  @keyframes colorwave {
+    0%   { fill: #38bdf8; }
+    25%  { fill: #01f4ff; }
+    50%  { fill: #38bdf8; }
+    75%  { fill: #01f4ff; }
+    100% { fill: #38bdf8; }
+  }
+
+  .bg {
+    animation: bgpulse 8s ease-in-out infinite;
+  }
+
+  @keyframes bgpulse {
+    0%, 100% { opacity: 0.45; }
+    50%       { opacity: 0.65; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header-wrap">
+  <svg id="header-grid" class="header-grid" xmlns="http://www.w3.org/2000/svg"></svg>
+</div>
+
+<script>
+const ROWS = 10;
+const COLS = 60;
+const CELL = 18;
+const TEXT = "SPEED CLI";
+
+const FONT = {
+  'S': [
+    [0,1,1,1,0],
+    [1,0,0,0,1],
+    [1,0,0,0,0],
+    [0,1,1,1,0],
+    [0,0,0,0,1],
+    [1,0,0,0,1],
+    [0,1,1,1,0],
+    [0,0,0,0,0],
+  ],
+  'P': [
+    [1,1,1,1,0],
+    [1,0,0,0,1],
+    [1,0,0,0,1],
+    [1,1,1,1,0],
+    [1,0,0,0,0],
+    [1,0,0,0,0],
+    [1,0,0,0,0],
+    [0,0,0,0,0],
+  ],
+  'E': [
+    [1,1,1,1,1],
+    [1,0,0,0,0],
+    [1,0,0,0,0],
+    [1,1,1,1,0],
+    [1,0,0,0,0],
+    [1,0,0,0,0],
+    [1,1,1,1,1],
+    [0,0,0,0,0],
+  ],
+  'D': [
+    [1,1,1,1,0],
+    [1,0,0,0,1],
+    [1,0,0,0,1],
+    [1,0,0,0,1],
+    [1,0,0,0,1],
+    [1,0,0,0,1],
+    [1,1,1,1,0],
+    [0,0,0,0,0],
+  ],
+  ' ': [
+    [0,0,0],
+    [0,0,0],
+    [0,0,0],
+    [0,0,0],
+    [0,0,0],
+    [0,0,0],
+    [0,0,0],
+    [0,0,0],
+  ],
+  'C': [
+    [0,1,1,1,1],
+    [1,0,0,0,0],
+    [1,0,0,0,0],
+    [1,0,0,0,0],
+    [1,0,0,0,0],
+    [1,0,0,0,0],
+    [0,1,1,1,1],
+    [0,0,0,0,0],
+  ],
+  'L': [
+    [1,0,0,0,0],
+    [1,0,0,0,0],
+    [1,0,0,0,0],
+    [1,0,0,0,0],
+    [1,0,0,0,0],
+    [1,0,0,0,0],
+    [1,1,1,1,1],
+    [0,0,0,0,0],
+  ],
+  'I': [
+    [1,1,1],
+    [0,1,0],
+    [0,1,0],
+    [0,1,0],
+    [0,1,0],
+    [0,1,0],
+    [1,1,1],
+    [0,0,0],
+  ],
+};
+
+const litGrid = Array.from({ length: ROWS }, () => Array(COLS).fill(false));
+
+let totalW = 0;
+for (let i = 0; i < TEXT.length; i++) {
+  totalW += FONT[TEXT[i]][0].length;
+  if (i < TEXT.length - 1) totalW += 1;
+}
+const startCol = Math.floor((COLS - totalW) / 2);
+
+let col = startCol;
+for (let ci = 0; ci < TEXT.length; ci++) {
+  const ch = TEXT[ci];
+  const charMap = FONT[ch];
+  const cw = charMap[0].length;
+  for (let r = 0; r < 8; r++) {
+    for (let c = 0; c < cw; c++) {
+      if (charMap[r][c]) {
+        const gr = 1 + r;
+        const gc = col + c;
+        if (gr >= 0 && gr < ROWS && gc >= 0 && gc < COLS) {
+          litGrid[gr][gc] = true;
+        }
+      }
+    }
+  }
+  col += cw + (ci < TEXT.length - 1 ? 1 : 0);
+}
+
+const ICON_PATH =
+  'M 92 72 C 142.81 72 184 113.19 184 164 ' +
+  'C 184 214.81 142.81 256 92 256 ' +
+  'C 41.19 256 0 214.81 0 164 ' +
+  'C 0 113.19 41.19 72 92 72 Z ' +
+  'M 256 0 L 256 256 L 184 256 L 184 72 L 0 72 L 0 0 Z';
+
+const NS = 'http://www.w3.org/2000/svg';
+const svg = document.getElementById('header-grid');
+const W = COLS * CELL;
+const H = ROWS * CELL;
+
+svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+/* width/height only via CSS — fixed pixel attrs can force overflow inside iframe */
+svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+
+const defs = document.createElementNS(NS, 'defs');
+const sym = document.createElementNS(NS, 'symbol');
+sym.setAttribute('id', 'ic');
+sym.setAttribute('viewBox', '0 0 256 256');
+const p = document.createElementNS(NS, 'path');
+p.setAttribute('d', ICON_PATH);
+sym.appendChild(p);
+defs.appendChild(sym);
+svg.appendChild(defs);
+
+const bg = document.createElementNS(NS, 'rect');
+bg.setAttribute('width', W);
+bg.setAttribute('height', H);
+bg.setAttribute('fill', '#0d131d');
+svg.appendChild(bg);
+
+for (let r = 0; r < ROWS; r++) {
+  for (let c = 0; c < COLS; c++) {
+    const isLit = litGrid[r][c];
+    const x = c * CELL;
+    const y = r * CELL;
+
+    const use = document.createElementNS(NS, 'use');
+    use.setAttribute('href', '#ic');
+    use.setAttribute('x', x);
+    use.setAttribute('y', y);
+    use.setAttribute('width', CELL);
+    use.setAttribute('height', CELL);
+
+    if (isLit) {
+      use.setAttribute('class', 'lit');
+      const delay = (c * 0.055).toFixed(3);
+      use.style.animationDelay = `-${delay}s`;
+    } else {
+      use.setAttribute('class', 'bg');
+      const delay = ((r * COLS + c) * 0.004).toFixed(3);
+      use.style.animationDelay = `-${delay}s`;
+    }
+
+    svg.appendChild(use);
+  }
+}
+</script>
+</body>
+</html>
