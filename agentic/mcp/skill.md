@@ -31,6 +31,12 @@ Use this skill when the user needs **hosted or remote API keys** without checkin
 
 After merge, **`0X_API_KEY`** is mirrored to **`OX_API_KEY`** when set.
 
+Current List of hosted mcp:
+
+speed start https://speed-mcp-production.up.railway.app
+
+(more to come soon)
+
 ## Files on disk
 
 | Path | Role |
