@@ -118,7 +118,7 @@ speed whoami
 
 ## Advanced setup (Cursor + full speed-scripts)
 
-Use this path when you want **Cursor** and the **entire** [speed-scripts](https://github.com/lightspeedfoundation/speed-scripts) tree (not just one `speed scripts install` folder).
+Use this path when you want **Cursor** and the **entire** [speed-scripts](https://github.com/lightspeedfoundation/speed-scripts) tree — **clone** the repo locally.
 
 1. **Install Cursor** — you can skip payment and use the free tier.
 2. **Open a terminal** in your project and run the same bootstrap as above:
@@ -133,7 +133,7 @@ speed whoami
 
 After this you have a full CLI setup and your **public wallet address** from `whoami`.
 
-3. **Clone the script library** (full repo; alternative to installing a single bot with `speed scripts install <name>`):
+3. **Clone the script library** (full repo):
 
 ```bash
 git clone https://github.com/lightspeedfoundation/speed-scripts/

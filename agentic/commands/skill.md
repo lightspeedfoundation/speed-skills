@@ -127,7 +127,7 @@ Requires correct **`OPENSEA_API_KEY`** for API-heavy flows.
 |---------|------|
 | **`start`** | MCP connect + persist URL + merge API env. |
 | **`skill`** | Copy bundled Cursor/OpenClaw **`SKILL.md`** into project (`openclaw/skill.md` by default). |
-| **`scripts`** | **`scripts install <name>`** — `degit` from `lightspeedfoundation/speed-scripts` into `./scripts` or **`SPEED_SCRIPTS_PATH`**. |
+| **`scripts`** | CLI namespace for script-related helpers — confirm behavior with **`speed scripts --help`**. Bot code lives in [speed-scripts](https://github.com/lightspeedfoundation/speed-scripts/): **clone** the repo, discover folders under **`scripts/`**, read each **`*-skill.md`**. See [Scripts](../scripts/skill.md). |
 
 ---
 

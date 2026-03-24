@@ -75,7 +75,7 @@ Agents should:
 
 ## Related
 
-- [Scripts](../scripts/skill.md) (install + upstream links)
+- [Scripts](../scripts/skill.md) (clone + upstream links)
 - [Protocol](../protocol/skill.md) (chains, tokens)
 - [Orchestration](../orchestration/skill.md) (execution discipline)
 - [Index](../README.md)

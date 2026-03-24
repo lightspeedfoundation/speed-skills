@@ -64,8 +64,7 @@ Chain is **` -c <id|name>`** (e.g. `base`, `8453`, `arbitrum`). Defaults favor *
 | Layer | Responsibility |
 |-------|----------------|
 | **speed-cli** | Atomic operations, one-shot flows, config, identity, SANS helpers. |
-| **speed-scripts** | Multi-step bots, polling, risk/exit parameters documented per folder `*-skill.md`. |
-| **`speed scripts install`** | Copies a named folder from the GitHub repo into `./scripts` (or `SPEED_SCRIPTS_PATH`). |
+| **speed-scripts** | Multi-step bots, polling, risk/exit parameters documented per folder **`*-skill.md`**. Get the library by cloning [speed-scripts](https://github.com/lightspeedfoundation/speed-scripts/). |
 
 ## Related
 

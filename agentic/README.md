@@ -19,7 +19,7 @@ Skill-style pages for **GitHub Pages**: YAML frontmatter (when to load), then di
 | [Why Speed-CLI](./why/skill.md) | Problems solved, design pillars, what the CLI is *not*, relation to speed-scripts |
 | [Protocol](./protocol/skill.md) | Env matrix, chains/explorers, SPEED address, 0x/Squid/oracles, RPC, MCP merge rules, identity/SANS |
 | [Commands](./commands/skill.md) | Global flags, JSON contract, grouped subcommands, `doctor` behavior |
-| [Scripts](./scripts/skill.md) | `speed scripts install`, degit, `SPEED_SCRIPTS_PATH`, upstream doc links |
+| [Scripts](./scripts/skill.md) | Clone [speed-scripts](https://github.com/lightspeedfoundation/speed-scripts/), folder discovery, `*-skill.md`, upstream doc links |
 | [Building blocks](./building-blocks/skill.md) | Base vs target, strategy families, regime thinking, hazards, decimals |
 | [Orchestration](./orchestration/skill.md) | Chaining JSON, multi-terminal, agent phases, errors, logging |
 | [Identity & SANS](./identity-sans/skill.md) | `.speed` on Base, profiles, SANS / OpenSea listings and offers |
