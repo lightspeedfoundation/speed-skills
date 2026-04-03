@@ -82,7 +82,7 @@ Connects to a **Streamable HTTP** MCP server at **`{baseUrl}/mcp`** (POST `initi
 Example (production):
 
 ```bash
-speed start https://speed-mcp-production.up.railway.app
+speed start mcp.ispeed.pro
 ```
 
 If MCP is down or TLS is wrong, the command **fails** and nothing useful is persisted — fix URL/network and retry.
@@ -105,7 +105,7 @@ Default write target: `./openclaw/skill.md` (unless `--dir` / `--file` change it
 ```bash
 npm install -g @lightspeed-cli/speed-cli
 speed setup --skip
-speed start https://speed-mcp-production.up.railway.app
+speed start mcp.ispeed.pro
 speed skill
 speed whoami
 ```
@@ -126,7 +126,7 @@ Use this path when you want **Cursor** and the **entire** [speed-scripts](https:
 ```bash
 npm install -g @lightspeed-cli/speed-cli
 speed setup --skip
-speed start https://speed-mcp-production.up.railway.app
+speed start mcp.ispeed.pro
 speed skill
 speed whoami
 ```
